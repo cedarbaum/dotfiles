@@ -74,7 +74,7 @@ bindsym XF86AudioStop exec mpc stop
 bindsym --release $super+Shift+p exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -2 -t ~/Pictures/screenshots | head -1`' # Area selection
 
 # kill focused window
-bindsym $super+x kill
+bindsym $super+Shift+x kill
 
 # change focus
 bindsym $super+h focus left
