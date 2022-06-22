@@ -115,5 +115,10 @@ bindkey -v
 bindkey '^R' history-incremental-search-backward
 
 export PATH="$PATH:/home/$USER/.local/bin"
+export PATH=$PATH:/usr/local/go/bin:~/go/bin
 
 if [ "$TMUX" = "" ]; then tmux; fi
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
